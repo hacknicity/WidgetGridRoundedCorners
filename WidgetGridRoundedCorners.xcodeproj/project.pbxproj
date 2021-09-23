@@ -16,6 +16,8 @@
 		6C3C1AE126FCC06A0006CFB7 /* WidgetGridRounderCornersWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3C1AE026FCC06A0006CFB7 /* WidgetGridRounderCornersWidget.swift */; };
 		6C3C1AE326FCC06C0006CFB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C3C1AE226FCC06C0006CFB7 /* Assets.xcassets */; };
 		6C3C1AE726FCC06C0006CFB7 /* WidgetGridRounderCornersWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6C3C1AD926FCC06A0006CFB7 /* WidgetGridRounderCornersWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6C3C1AED26FCCAC80006CFB7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6C3C1AEC26FCCAC80006CFB7 /* README.md */; };
+		6CBEE3E026FCCBE100363B83 /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CBEE3DF26FCCBE100363B83 /* screenshot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		6C3C1AE026FCC06A0006CFB7 /* WidgetGridRounderCornersWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetGridRounderCornersWidget.swift; sourceTree = "<group>"; };
 		6C3C1AE226FCC06C0006CFB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C3C1AE426FCC06C0006CFB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C3C1AEC26FCCAC80006CFB7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6CBEE3DF26FCCBE100363B83 /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 		6C3C1ABB26FCC0330006CFB7 = {
 			isa = PBXGroup;
 			children = (
+				6C3C1AEC26FCCAC80006CFB7 /* README.md */,
+				6CBEE3DF26FCCBE100363B83 /* screenshot.png */,
 				6C3C1AC626FCC0330006CFB7 /* WidgetGridRoundedCorners */,
 				6C3C1ADF26FCC06A0006CFB7 /* WidgetGridRounderCornersWidget */,
 				6C3C1ADA26FCC06A0006CFB7 /* Frameworks */,
@@ -214,8 +220,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C3C1AED26FCCAC80006CFB7 /* README.md in Resources */,
 				6C3C1ACF26FCC0360006CFB7 /* Preview Assets.xcassets in Resources */,
 				6C3C1ACC26FCC0360006CFB7 /* Assets.xcassets in Resources */,
+				6CBEE3E026FCCBE100363B83 /* screenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
