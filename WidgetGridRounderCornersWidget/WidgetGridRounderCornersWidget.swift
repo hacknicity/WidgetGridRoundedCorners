@@ -41,8 +41,45 @@ struct SimpleEntry: TimelineEntry {
 struct WidgetGridRounderCornersWidgetEntryView : View {
     var entry: Provider.Entry
 
+    private let outerPadding = 12.0
+    private let innerPadding = 12.0
+    private let numberOfRows = 4
+    private let numberOfColumns = 4
+
     var body: some View {
-        Text(entry.date, style: .time)
+        GeometryReader { geometry in
+            VStack {
+                ForEach(0..<numberOfRows) { rowNumber in
+                    if rowNumber != 0 {
+                        Spacer(minLength: innerPadding)
+                    }
+
+                    rowView(forRowNumber: rowNumber)
+                }
+            }
+        }
+        .padding()
+    }
+
+    private func rowView(forRowNumber rowNumber: Int) -> some View {
+        HStack {
+            ForEach(0..<numberOfColumns) { columnNumber in
+                if columnNumber != 0 {
+                    Spacer(minLength: innerPadding)
+                }
+
+                cellView(forIndex: rowNumber * numberOfColumns + columnNumber)
+                    .clipShape(ContainerRelativeShape())
+            }
+        }
+    }
+
+    private func cellView(forIndex index: Int) -> some View {
+        ZStack {
+            Color(.red)
+            Text("\(index)")
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
@@ -56,12 +93,13 @@ struct WidgetGridRounderCornersWidget: Widget {
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
+        .supportedFamilies([.systemExtraLarge])
     }
 }
 
 struct WidgetGridRounderCornersWidget_Previews: PreviewProvider {
     static var previews: some View {
         WidgetGridRounderCornersWidgetEntryView(entry: SimpleEntry(date: Date()))
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
+            .previewContext(WidgetPreviewContext(family: .systemExtraLarge))
     }
 }
