@@ -11,7 +11,36 @@
 		6C3C1ACA26FCC0330006CFB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3C1AC926FCC0330006CFB7 /* ContentView.swift */; };
 		6C3C1ACC26FCC0360006CFB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C3C1ACB26FCC0360006CFB7 /* Assets.xcassets */; };
 		6C3C1ACF26FCC0360006CFB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C3C1ACE26FCC0360006CFB7 /* Preview Assets.xcassets */; };
+		6C3C1ADC26FCC06A0006CFB7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3C1ADB26FCC06A0006CFB7 /* WidgetKit.framework */; };
+		6C3C1ADE26FCC06A0006CFB7 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3C1ADD26FCC06A0006CFB7 /* SwiftUI.framework */; };
+		6C3C1AE126FCC06A0006CFB7 /* WidgetGridRounderCornersWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3C1AE026FCC06A0006CFB7 /* WidgetGridRounderCornersWidget.swift */; };
+		6C3C1AE326FCC06C0006CFB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C3C1AE226FCC06C0006CFB7 /* Assets.xcassets */; };
+		6C3C1AE726FCC06C0006CFB7 /* WidgetGridRounderCornersWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6C3C1AD926FCC06A0006CFB7 /* WidgetGridRounderCornersWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C3C1AE526FCC06C0006CFB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C3C1ABC26FCC0330006CFB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C3C1AD826FCC06A0006CFB7;
+			remoteInfo = WidgetGridRounderCornersWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6C3C1AEB26FCC06C0006CFB7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6C3C1AE726FCC06C0006CFB7 /* WidgetGridRounderCornersWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6C3C1AC426FCC0330006CFB7 /* WidgetGridRoundedCorners.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidgetGridRoundedCorners.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +48,12 @@
 		6C3C1AC926FCC0330006CFB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6C3C1ACB26FCC0360006CFB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C3C1ACE26FCC0360006CFB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6C3C1AD926FCC06A0006CFB7 /* WidgetGridRounderCornersWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetGridRounderCornersWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C3C1ADB26FCC06A0006CFB7 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		6C3C1ADD26FCC06A0006CFB7 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		6C3C1AE026FCC06A0006CFB7 /* WidgetGridRounderCornersWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetGridRounderCornersWidget.swift; sourceTree = "<group>"; };
+		6C3C1AE226FCC06C0006CFB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C3C1AE426FCC06C0006CFB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +64,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6C3C1AD626FCC06A0006CFB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C3C1ADE26FCC06A0006CFB7 /* SwiftUI.framework in Frameworks */,
+				6C3C1ADC26FCC06A0006CFB7 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				6C3C1AC626FCC0330006CFB7 /* WidgetGridRoundedCorners */,
+				6C3C1ADF26FCC06A0006CFB7 /* WidgetGridRounderCornersWidget */,
+				6C3C1ADA26FCC06A0006CFB7 /* Frameworks */,
 				6C3C1AC526FCC0330006CFB7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				6C3C1AC426FCC0330006CFB7 /* WidgetGridRoundedCorners.app */,
+				6C3C1AD926FCC06A0006CFB7 /* WidgetGridRounderCornersWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +114,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6C3C1ADA26FCC06A0006CFB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C3C1ADB26FCC06A0006CFB7 /* WidgetKit.framework */,
+				6C3C1ADD26FCC06A0006CFB7 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C3C1ADF26FCC06A0006CFB7 /* WidgetGridRounderCornersWidget */ = {
+			isa = PBXGroup;
+			children = (
+				6C3C1AE026FCC06A0006CFB7 /* WidgetGridRounderCornersWidget.swift */,
+				6C3C1AE226FCC06C0006CFB7 /* Assets.xcassets */,
+				6C3C1AE426FCC06C0006CFB7 /* Info.plist */,
+			);
+			path = WidgetGridRounderCornersWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +143,34 @@
 				6C3C1AC026FCC0330006CFB7 /* Sources */,
 				6C3C1AC126FCC0330006CFB7 /* Frameworks */,
 				6C3C1AC226FCC0330006CFB7 /* Resources */,
+				6C3C1AEB26FCC06C0006CFB7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6C3C1AE626FCC06C0006CFB7 /* PBXTargetDependency */,
 			);
 			name = WidgetGridRoundedCorners;
 			productName = WidgetGridRoundedCorners;
 			productReference = 6C3C1AC426FCC0330006CFB7 /* WidgetGridRoundedCorners.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6C3C1AD826FCC06A0006CFB7 /* WidgetGridRounderCornersWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C3C1AE826FCC06C0006CFB7 /* Build configuration list for PBXNativeTarget "WidgetGridRounderCornersWidgetExtension" */;
+			buildPhases = (
+				6C3C1AD526FCC06A0006CFB7 /* Sources */,
+				6C3C1AD626FCC06A0006CFB7 /* Frameworks */,
+				6C3C1AD726FCC06A0006CFB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetGridRounderCornersWidgetExtension;
+			productName = WidgetGridRounderCornersWidgetExtension;
+			productReference = 6C3C1AD926FCC06A0006CFB7 /* WidgetGridRounderCornersWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +183,9 @@
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					6C3C1AC326FCC0330006CFB7 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					6C3C1AD826FCC06A0006CFB7 = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
@@ -116,6 +204,7 @@
 			projectRoot = "";
 			targets = (
 				6C3C1AC326FCC0330006CFB7 /* WidgetGridRoundedCorners */,
+				6C3C1AD826FCC06A0006CFB7 /* WidgetGridRounderCornersWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +216,14 @@
 			files = (
 				6C3C1ACF26FCC0360006CFB7 /* Preview Assets.xcassets in Resources */,
 				6C3C1ACC26FCC0360006CFB7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C3C1AD726FCC06A0006CFB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C3C1AE326FCC06C0006CFB7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +239,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6C3C1AD526FCC06A0006CFB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C3C1AE126FCC06A0006CFB7 /* WidgetGridRounderCornersWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C3C1AE626FCC06C0006CFB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C3C1AD826FCC06A0006CFB7 /* WidgetGridRounderCornersWidgetExtension */;
+			targetProxy = 6C3C1AE526FCC06C0006CFB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6C3C1AD026FCC0360006CFB7 /* Debug */ = {
@@ -264,6 +377,7 @@
 		6C3C1AD326FCC0360006CFB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,6 +408,7 @@
 		6C3C1AD426FCC0360006CFB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -321,6 +436,60 @@
 			};
 			name = Release;
 		};
+		6C3C1AE926FCC06C0006CFB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K68CFVKJ8L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetGridRounderCornersWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetGridRounderCornersWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hacknicity.WidgetGridRoundedCorners.WidgetGridRounderCornersWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C3C1AEA26FCC06C0006CFB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K68CFVKJ8L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetGridRounderCornersWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetGridRounderCornersWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hacknicity.WidgetGridRoundedCorners.WidgetGridRounderCornersWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -338,6 +507,15 @@
 			buildConfigurations = (
 				6C3C1AD326FCC0360006CFB7 /* Debug */,
 				6C3C1AD426FCC0360006CFB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C3C1AE826FCC06C0006CFB7 /* Build configuration list for PBXNativeTarget "WidgetGridRounderCornersWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C3C1AE926FCC06C0006CFB7 /* Debug */,
+				6C3C1AEA26FCC06C0006CFB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
