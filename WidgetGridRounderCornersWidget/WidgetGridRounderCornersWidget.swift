@@ -48,13 +48,27 @@ struct WidgetGridRounderCornersWidgetEntryView : View {
 
     var body: some View {
         GeometryReader { geometry in
-            VStack {
-                ForEach(0..<numberOfRows) { rowNumber in
-                    if rowNumber != 0 {
-                        Spacer(minLength: innerPadding)
-                    }
+            let rowHeight = (geometry.size.height - CGFloat(numberOfRows - 1) * innerPadding) / CGFloat(numberOfRows)
 
-                    rowView(forRowNumber: rowNumber)
+            VStack {
+                ZStack {
+                    // The first row
+                    rowView(forRowNumber: 0)
+
+                    // Subsequent rows will be on top of the first row (as we're in a ZStack) but offset downwards to where they ought to appear
+                    ForEach(1..<numberOfRows) { rowNumber in
+                        rowView(forRowNumber: rowNumber)
+                            .frame(height: rowHeight)
+                            .offset(x: 0,
+                                    y: CGFloat(rowNumber) * (rowHeight + innerPadding))
+                    }
+                }
+
+                // We need spacers for where the 1..<numberOfRows should appear to ensure the first row's height is calculated correctly
+                ForEach(1..<numberOfRows) { rowNumber in
+                    Spacer(minLength: innerPadding)
+                    Spacer()
+                        .frame(maxHeight: .infinity)
                 }
             }
         }
